@@ -56,11 +56,11 @@ i{
   background-color: rgba(59,89,152,0.4)
 }
 
-#gallery:hover {
+#more_info:hover {
   background-color: rgba(59,89,152,0.4)
 }
 
-.spacer{
+.spacer {
     width: 18%;
     display: inline-block;
 }
