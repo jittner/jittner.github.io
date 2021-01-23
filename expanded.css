@@ -37,6 +37,12 @@ html {
   src: url('./fonts/AvenirNext-Demi.otf') format('opentype');
   font-weight: 600;
 }
+@font-face {
+  font-family: Circular;
+  src: url('./fonts/circular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   font-size: 1.6rem;
   line-height: 1.5;
@@ -91,7 +97,7 @@ a.button {
   padding: 1rem 2rem;
   font-size: 1.4rem; }
   a.button:hover {
-    border-color: #1475fb
+    border-color: #1475fb;
     text-decoration: none; 
   }
 .resume_button {
@@ -106,14 +112,13 @@ a.button {
     border-color: #1475fb;
     text-decoration: none; 
   }
-.section, section.intro, section.exp, section.contact {
+.section, section.intro, section.exp, section.featured, section.contact {
   padding-top: 8rem;
   padding-bottom: 8rem; 
 }
 ul.tags {
   list-style: none;
   padding: 0;
-  margin-bottom: 4rem; 
 }
   ul.tags li {
     display: inline-block;
@@ -124,8 +129,8 @@ ul.tags {
     padding: 6px;
     line-height: 1;
     border-radius: 2px;
-    margin-bottom: .25rem;
-    font-family: 'Ubuntu', monospace; 
+    /* margin-bottom: .25rem; */
+    font-family: Circular, monospace; 
   }
 section.hero {
   padding-top: 18rem;
@@ -169,21 +174,46 @@ section.exp {
     list-style: none;
     padding-left: 0;
   }
-section.contact a {
-  margin-right: 2rem; 
-}
+section.contact {
+  background-color: #fafafa;
+} section.contact a {
+    margin-right: 2rem; 
+  }
 section.footer {
   padding-top: 4rem;
   padding-bottom: 4rem;
-  background-color: #fafafa; 
-}
-  section.footer p {
+  background-color: #ffffff; 
+} section.footer p {
     opacity: .5; 
   }
 .active {
   color: #22e800;
   opacity: 1;
   animation: fade 2s infinite; 
+}
+section.featured {
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #ffffff;
+} section.featured h3 {
+    font-size: 2.3rem;
+  }
+.project-thumbnail {
+  background-color:#fff ;
+} 
+section.featured a {
+  padding: 0;
+}
+section.featured a img {
+  max-width: 70rem;
+  height: auto;
+  margin-bottom: 1rem;
+}
+section.featured a:hover img {
+  opacity: 0.8;
+  filter: blur(1px);
+  transition: all 0.3s cubic-bezier(0.3, 0, 0.4, 1);
+  cursor: pointer;
 }
 @keyframes fade {
   0%, 100% {
