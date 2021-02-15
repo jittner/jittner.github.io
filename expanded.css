@@ -200,13 +200,12 @@ section.featured {
   }
 .project-thumbnail {
   background-color:#fff ;
+  max-width: 70rem;
 } 
 section.featured a {
   padding: 0;
 }
 section.featured a img {
-  max-width: 70rem;
-  height: auto;
   margin-bottom: 1rem;
   border-radius: 10px;
 }
